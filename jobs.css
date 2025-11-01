@@ -1,0 +1,276 @@
+ /* jobs */
+   
+
+    .job-container {
+      max-width: 900px;
+      margin: 20px auto 50px; /* Add margin to push content below fixed nav */
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: deeppink;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .line {
+      height: 3px;
+      background-color: darkgray;
+      border: none;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    /* Job cards */
+    .job-card {
+      background: white;
+      border-left: 5px solid #d117ac;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      box-shadow: 0 0 3px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .job-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    .job-title {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      color: #d117ac;
+    }
+
+    .job-meta {
+      font-size: 0.85em;
+      margin-bottom: 10px;
+      color: #333333;
+    }
+    
+    .job-meta i {
+  color: #d117ac; /* your theme color */
+  margin-right: 6px;
+  font-size: 15px;
+}
+
+.bookmark {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #999;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.bookmark:hover {
+  color: #d117ac;
+}
+
+    .job-desc {
+      font-size: 0.95em;
+      color: black;
+    }
+
+    /* Preview Modal */
+    .preview-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .preview-card {
+      background: white;
+      max-width: 600px;
+      width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      color: #d117ac;
+      position: relative;
+      animation: fadeIn 0.3s ease;
+      overflow: hidden;
+    }
+
+    /* Close button (X) */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: none;
+      border: none;
+      font-size: 1.4em;
+      cursor: pointer;
+      color: black;
+      transition: transform 0.2s ease;
+    }
+
+    .close-btn:hover {
+      transform: scale(1.2);
+      color: hotpink;
+    }
+
+    /* Preview image container */
+    .preview-image {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 ratio */
+      background-color: #eee;
+      overflow: hidden;
+    }
+
+    .preview-image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .preview-content {
+      padding: 20px;
+    }
+
+    .preview-title {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .preview-requirements {
+      font-size: 0.95em;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #333;
+    } 
+    
+    .preview-requirements ul {
+      list-style-type: disc;       /* ensures bullets are visible */
+      padding-left: 20px;          /* 👈 this creates the indentation */
+      margin-top: 0;
+      margin-bottom: 0;
+      list-style-position: outside;
+    }
+
+    .preview-requirements li {
+      margin-bottom: 5px;
+    }
+    .preview-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .btn-apply {
+      background: deeppink;
+      color: white;
+    }
+
+    .btn-apply:hover {
+        background:  #cc00cc;
+    }
+    
+    /* --- JOB META ICONS + LAYOUT --- */
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookmark-icon {
+  font-size: 1.4em;
+  color: #d117ac;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.bookmark-icon:hover {
+  color: #e538bb;
+  transform: scale(1.1);
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 0.85em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job-meta span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(209, 23, 172, 0.08);
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.job-meta ion-icon {
+  font-size: 1.1em;
+  color: #d117ac;
+}
+
+/* --- APPLY BUTTON --- */
+.apply-btn {
+  margin-top: 12px;
+  background: #d117ac;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.apply-btn:hover {
+  background: #e538bb;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(209, 23, 172, 0.4);
+}
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    
+    

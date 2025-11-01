@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Vincent de Ferrer College of Camarin, Inc.</title>
+    <link rel="icon" type="image/x-icon" href="D:\svfc-assets/logo.png">
+    <link rel="stylesheet" href="RegAd.css">
+   <link rel="stylesheet" href="jobs.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+  <div class="top-bar">
+    <!-- 🏫 SCHOOL NAME -->
+    <div class="school-name">
+        <a href="#">St. Vincent de Ferrer College of Camarin, Inc.</a>
+    </div>
+
+    <!-- 🏵️ CENTER LOGO -->
+    <div class="center-logo">
+        <img src="D:\svfc-assets/logo.png" alt="SVFC Logo" aria-label="St. Vincent de Ferrer College of Camarin, Inc. Logo">
+    </div>
+
+    <!-- 📋 NAVIGATION MENU -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="admissions.html">Admission</a></li>
+            <li><a href="registrar.html">Registrar</a></li>
+            <li><a href="svfcJobsChallenge.html">Jobs</a></li>
+        </ul>
+    </nav>
+</div>
+ 
+   <section class="registrar">
+   <div class="admission-banner"
+        style="background-image: url('D:\svfc-assets/5.png');">
+    <h1>JOB OPPORTUNITIES</h1>
+  </div>
+
+  <p class="content">
+    Be part of a vibrant community where passion meets purpose. At Saint Vincent De Ferrer College, we value innovation, service, and growth. Work alongside dedicated professionals in shaping young minds, while enriching your career in a supportive, faith-centered environment. Your journey starts here!
+
+  </p>
+</section>
+  <div class="job-container">
+
+    <h2>Available Positions</h2>
+    <hr class="line">
+
+     <div class="job-card" onclick="openPreview('Alternative Learning Support Teacher')">
+        <i class="fa-regular fa-bookmark bookmark" onclick="event.stopPropagation(); toggleBookmark(this)"></i>
+        <div class="job-title">Alternative Learning Support Teacher</div>
+        <div class="job-meta">
+          <span><i class="fa-solid fa-clock"></i> Full-time</span>
+          <span><i class="fa-solid fa-location-dot"></i> Makati Campus</span>
+          <span><i class="fa-solid fa-graduation-cap"></i> Education Field</span>
+        </div>
+        <div class="job-desc">
+          We are looking for an innovative and passionate teacher...
+        </div>
+        <button class="apply-btn">Apply</button>
+      </div>
+
+    <!-- 🌸 Marketing Specialist -->
+    <div class="job-card" onclick="openPreview('Marketing Specialist')">
+      <i class="fa-regular fa-bookmark bookmark"></i>
+      <div class="job-title">Marketing Specialist</div>
+      <div class="job-meta">
+        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+        <span><i class="fa-solid fa-location-dot"></i> Makati Campus</span>
+        <span><i class="fa-solid fa-bullhorn"></i> Marketing Field</span>
+      </div>
+      <div class="job-desc">
+        We are looking for an innovative and passionate Marketing Specialist...
+      </div>
+      <button class="apply-btn">Apply</button>
+    </div>
+
+    <!-- 🌸 Accountant -->
+    <div class="job-card" onclick="openPreview('Accountant')">
+      <i class="fa-regular fa-bookmark bookmark"></i>
+      <div class="job-title">Accountant</div>
+      <div class="job-meta">
+        <span><i class="fa-solid fa-clock"></i> Part-time</span>
+        <span><i class="fa-solid fa-location-dot"></i> Caloocan Campus</span>
+        <span><i class="fa-solid fa-calculator"></i> Finance Field</span>
+      </div>
+      <div class="job-desc">
+        SVFC seeks a meticulous Accounting Specialist...
+      </div>
+      <button class="apply-btn">Apply</button>
+    </div>
+
+    <!-- 🌸 Cooking Specialist -->
+    <div class="job-card" onclick="openPreview('Cooking Specialist')">
+      <i class="fa-regular fa-bookmark bookmark"></i>
+      <div class="job-title">Cooking Specialist</div>
+      <div class="job-meta">
+        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+        <span><i class="fa-solid fa-location-dot"></i> Caloocan Campus</span>
+        <span><i class="fa-solid fa-utensils"></i> Culinary Field</span>
+      </div>
+      <div class="job-desc">
+        SVFC seeks Cooking Specialist...
+      </div>
+      <button class="apply-btn">Apply</button>
+    </div>
+
+    <!-- 🌸 Marketing Agent -->
+    <div class="job-card" onclick="openPreview('Marketing Agent')">
+      <i class="fa-regular fa-bookmark bookmark"></i>
+      <div class="job-title">Marketing Agent</div>
+      <div class="job-meta">
+        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+        <span><i class="fa-solid fa-location-dot"></i> Pampanga Campus</span>
+        <span><i class="fa-solid fa-bullhorn"></i> Marketing Field</span>
+      </div>
+      <div class="job-desc">
+        Will you be the next Marketing Agent of SVFC?...
+      </div>
+      <button class="apply-btn">Apply</button>
+    </div>
+
+    <!-- 🌸 Psychologist Specialist -->
+    <div class="job-card" onclick="openPreview('Psychologist Specialist')">
+      <i class="fa-regular fa-bookmark bookmark"></i>
+      <div class="job-title">Psychologist Specialist</div>
+      <div class="job-meta">
+        <span><i class="fa-solid fa-clock"></i> Part-time</span>
+        <span><i class="fa-solid fa-location-dot"></i> Makati Campus</span>
+        <span><i class="fa-solid fa-brain"></i> Psychology Field</span>
+      </div>
+      <div class="job-desc">
+        <b>Urgent:</b> Great need for Psychologist...
+      </div>
+      <button class="apply-btn">Apply</button>
+    </div>
+
+    <!-- 🌸 Sales Man -->
+    <div class="job-card" onclick="openPreview('Sales Man')">
+      <i class="fa-regular fa-bookmark bookmark"></i>
+      <div class="job-title">Sales Man</div>
+      <div class="job-meta">
+        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+        <span><i class="fa-solid fa-location-dot"></i> Makati Campus</span>
+        <span><i class="fa-solid fa-handshake"></i> Sales Field</span>
+      </div>
+      <div class="job-desc">
+        Convince the Caloocan citizens to try SVFC...
+      </div>
+      <button class="apply-btn">Apply</button>
+    </div>
+
+    <!-- 🌸 Orthopedics -->
+    <div class="job-card" onclick="openPreview('Orthopedics')">
+      <i class="fa-regular fa-bookmark bookmark"></i>
+      <div class="job-title">Specialist for Orthopedics</div>
+      <div class="job-meta">
+        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+        <span><i class="fa-solid fa-location-dot"></i> Makati Campus</span>
+        <span><i class="fa-solid fa-user-doctor"></i> Medical Field</span>
+      </div>
+      <div class="job-desc">
+        Great need for Orthopedics based in Caloocan City...
+      </div>
+      <button class="apply-btn">Apply</button>
+    </div>
+
+    <!-- 🌸 Food Specialist -->
+    <div class="job-card" onclick="openPreview('Food Specialist')">
+      <i class="fa-regular fa-bookmark bookmark"></i>
+      <div class="job-title">Food Specialist</div>
+      <div class="job-meta">
+        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+        <span><i class="fa-solid fa-location-dot"></i> Makati Campus</span>
+        <span><i class="fa-solid fa-bowl-food"></i> Culinary Field</span>
+      </div>
+      <div class="job-desc">
+        SVFC seeks a Food Specialist...
+      </div>
+      <button class="apply-btn">Apply</button>
+    </div>
+
+    <!-- 🌸 Cleaning Agent -->
+    <div class="job-card" onclick="openPreview('Cleaning Agent')">
+      <i class="fa-regular fa-bookmark bookmark"></i>
+      <div class="job-title">Cleaning Agent</div>
+      <div class="job-meta">
+        <span><i class="fa-solid fa-clock"></i> Full-time</span>
+        <span><i class="fa-solid fa-location-dot"></i> Makati Campus</span>
+        <span><i class="fa-solid fa-broom"></i> Maintenance Field</span>
+      </div>
+      <div class="job-desc">
+        SVFC welcomes those who are capable of being a cleaning agent ...
+      </div>
+      <button class="apply-btn">Apply</button>
+    </div>
+
+  </div>
+    
+    
+
+  <!-- Preview Modal -->
+  <div class="preview-overlay" id="previewModal">
+    <div class="preview-card">
+      <button class="close-btn" onclick="closePreview()">×</button>
+      <div class="preview-image">
+        <img id="previewImage" src="" alt="Job image">
+      </div>
+      <div class="preview-content">
+        <div class="preview-title" id="previewTitle"></div>
+        <div class="preview-requirements" id="previewRequirements"></div>
+        <div class="preview-buttons">
+          <button class="btn btn-apply">Apply Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const previewModal = document.getElementById('previewModal');
+    const previewTitle = document.getElementById('previewTitle');
+    const previewRequirements = document.getElementById('previewRequirements');
+    const previewImage = document.getElementById('previewImage');
+
+    const jobDetails = {
+      'Alternative Learning Support Teacher': {
+        image: 'D:\svfc-assets/A1.jpeg', // Replace with your image URL
+        requirements: `
+          <ul>
+            <li>Bachelor’s degree in Education or related field</li>
+            <li>Strong passion for teaching and student growth</li>
+            <li>Experience with differentiated instruction</li>
+            <li>Excellent communication and collaboration skills</li>
+          </ul>
+        `
+      },
+      'Marketing Specialist': {
+        image: 'D:\svfc-assets/B2.jpeg', // Replace with your image URL
+        requirements: `
+          <ul>
+            <li>Bachelor’s degree in Marketing, Communications, or related field</li>
+            <li>Experience in social media and content creation</li>
+            <li>Strong copywriting and design skills</li>
+            <li>Ability to plan and execute marketing campaigns</li>
+          </ul>
+        `
+            },
+      'Accountant': {
+        image: 'D:\svfc-assets/C.jpg', // Replace with your image URL
+        requirements: `
+          <ul>
+            <li>Bachelor’s degree in Accountancy</li>
+            <li>Experience in social media and content creation</li>
+            <li>Strong copywriting and design skills</li>
+            <li>Ability to plan and execute marketing campaigns</li>
+          </ul>
+        `
+             },
+      'Cooking Specialist': {
+        image: 'D:\svfc-assets/D.jpeg', // Replace with your image URL
+        requirements: `
+          <ul>
+            <li>Bachelor’s degree in Cooking</li>
+            <li>Experience in social media and content creation</li>
+            <li>Strong creative and design of food skills</li>
+            <li>Can cook for the whole campus</li>
+          </ul>
+        `
+              },
+      'Marketing Agent': {
+        image: 'D:\svfc-assets/E.jpeg', // Replace with your image URL
+        requirements: `
+          <ul>
+            <li>Bachelor’s degree in Marketing & Communications</li>
+            <li>Experience in social media and content creation</li>
+            <li>Strong convincing skills</li>
+            <li>Ability to execute marketing campaigns</li>
+          </ul>
+        `
+               },
+      'Psychologist Specialist': {
+        image: 'D:\svfc-assets/F.jpg', // Replace with your image URL
+        requirements: `
+          <ul>
+            <li>Bachelor’s degree in Psychology</li>
+            <li>Experience in such related fields</li>
+            <li>Strong copywriting and design skills</li>
+            <li>Ability to understand and fix people</li>
+          </ul>
+        ` 
+            },
+      'Sales Man': {
+        image: 'D:\svfc-assets/G.jpeg', // Replace with your image URL
+        requirements: `
+          <ul>
+            <li>Bachelor’s degree in Marketing</li>
+            <li>Experience in content creation</li>
+            <li>Has made more than 10000 sales</li>
+            <li>Ability to plan and execute marketing campaigns</li>
+          </ul>
+        ` 
+            },
+            
+      'Orthopedics': {
+        image: 'D:\svfc-assets/H.jpeg', // Replace with your image URL
+        requirements: `
+          <ul>
+            <li>Bachelor’s degree in Medtech</li>
+            <li>Experience in fixing bones</li>
+            <li>Strong and experienced field experience</li>
+            <li>Ability to heal people</li>
+          </ul>
+        ` 
+            
+            },
+            
+      'Food Specialist': {
+        image: 'D:\svfc-assets/I.jpg', // Replace with your image URL
+        requirements: `
+          <ul>
+            <li>Bachelor’s degree in Hospitality and Mnagement</li>
+            <li>Experience in social media and content creation</li>
+            <li>Strong copywriting and design skills</li>
+            <li>Ability to critically judge foods</li>
+          </ul>
+        ` 
+            },
+            
+      'Cleaning Agent': {
+        image: 'D:\svfc-assets/J.jpg', // Replace with your image URL
+        requirements: `
+          <ul>
+            <li>Bachelor’s  in Sanitary and Cleaning</li>
+            <li>Experience in cleaning</li>
+            <li>Strong cleaning</li>
+            <li>Ability to plan and execute whole building cleaning</li>
+          </ul>
+        ` 
+      }
+    };
+
+    function openPreview(jobTitle) {
+      const details = jobDetails[jobTitle];
+      previewTitle.textContent = jobTitle;
+      previewRequirements.innerHTML = details.requirements;
+      previewImage.src = details.image;
+      previewModal.style.display = 'flex';
+    }
+
+    function closePreview() {
+      previewModal.style.display = 'none';
+    }
+
+    // Close modal when clicking outside the card
+    previewModal.addEventListener('click', (e) => {
+      if (e.target === previewModal) {
+        closePreview();
+      }
+    });
+  </script>
+</body>
+     <!-- End of project Code -->
+   
+    
+    
+   <footer>
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>Website Developer</h3>
+      <hr>
+      <p>John Denson E. Inao</p>
+      <p>BSIT-3A</p>
+      <p>Human Computer Interaction 2</p>
+      <p>Mr. Jasper Murillo</p>
+    </div>
+    <!-- 🕿 Contact Information -->
+    <div class="footer-box">
+      <h3>Concierge Numbers</h3>
+      <hr>
+      <ul>
+        <li>SMART 0968-729-2593</li>
+        <li>SMART 0969-597-2577</li>
+        <li>SMART 0908-658-1680</li>
+        <li>SMART 0969-597-2586</li>
+      </ul>
+    </div>
+
+    <!-- 🕒 Office Hours -->
+    <div class="footer-box">
+      <h3>Office Hours</h3>
+      <hr>
+      <p><b>MONDAY to FRIDAY</b></p>
+      <p>8:00 A.M. – 5:00 P.M.</p>
+      <p><b>SATURDAY</b></p>
+      <p>8:00 A.M. – 12:00 P.M.</p>
+    </div>
+
+    <!-- 📍 Address + Socials -->
+    <div class="footer-box">
+      <h3>Address</h3>
+      <hr>
+      <p>SVFC Compound, San Vicente Ferrer Road,<br>
+      Area D, Brgy. 178, Camarin, Caloocan City</p>
+
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔗 Quick Links -->
+  <div class="footer-links">
+    <a href="#">Home</a>
+    <a href="#">Admissions</a>
+    <a href="#">Registrar</a>
+    <a href="#">Jobs</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+  <!-- ⚖️ Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 St. Vincent de Ferrer College of Camarin, Inc. | All Rights Reserved.</p>
+  </div>
+</footer>  
+
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Vincent de Ferrer College of Camarin, Inc.</title>
+    <link rel="icon" type="image/x-icon" href="D:\svfc-assets/logo.png">
+    <link rel="stylesheet" href="RegAd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+     <!-- 🏫 SCHOOL NAME -->
+    <div class="school-name">
+        <a href="#">St. Vincent de Ferrer College of Camarin, Inc.</a>
+    </div>
+
+    <!-- 🏵️ CENTER LOGO -->
+    <div class="center-logo">
+        <img src="D:\svfc-assets/logo.png" alt="SVFC Logo" aria-label="St. Vincent de Ferrer College of Camarin, Inc. Logo">
+    </div>
+
+    <!-- 📋 NAVIGATION MENU -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="admissions.html">Admission</a></li>
+            <li><a href="registrar.html">Registrar</a></li>
+            <li><a href="svfcJobsChallenge.html">Jobs</a></li>
+        </ul>
+    </nav>
+</div>
+
+    <br>
+     <!-- Carousel Container -->
+    <div style="position: relative; width: 100%; max-width: 1920px; height: auto; overflow: hidden; margin: auto;">
+
+        <!-- Carousel Slides (Images) -->
+        <div id="carousel" style="display: flex; transition: transform 0.5s ease;">
+
+            <!-- Slide 1 -->
+            <div style="flex-shrink: 0; width: 100%; height: 100%;">
+                <img src="D:\svfc-assets/image.jpg" alt="Image 1" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                            background-color: #d117ac; color: white; padding: 15px 25px; 
+                            font-size: 24px; font-weight: bold; border-radius: 10px; text-align: center;">
+                    Welcome <br> to St. Vincent de Ferrer College of Camarin, Inc.
+                </div>
+            </div>
+        
+            <!-- Slide 2 -->
+            <div style="flex-shrink: 0; width: 100%; height: 100%; position: relative;">
+                <img src="D:\svfc-assets/image slides 2.png" alt="Image 2" 
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                
+                <!-- Text Overlay -->
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                            background-color: #d117ac; color: white; padding: 15px 25px; 
+                            font-size: 24px; font-weight: bold; border-radius: 10px; text-align: center;">
+                    The Home of Quality and Innovative Education
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div style="flex-shrink: 0; width: 100%; height: 100%; position: relative;">
+                <img src="D:\svfc-assets/image slides 3.png" alt="Image 3" 
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                
+                <!-- Text Overlay -->
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                            background-color: #d117ac; color: white; padding: 15px 25px; 
+                            font-size: 24px; font-weight: bold; border-radius: 10px; text-align: center;">
+                    Join the Family to achieve quality Education
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div style="flex-shrink: 0; width: 100%; height: 100%; position: relative;">
+                <img src="D:\svfc-assets/enrollment.png" alt="Image 4" style="width: 100%; height: 100%; object-fit: cover;">
+                <a href="admissions.html">
+                    <button class="admission-button">Enroll Now!</button>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Left Scroll Button -->
+        <button class="carousel-button" onclick="moveSlide(-1)" style="left: 10px;">
+            &#10094;
+        </button>
+
+        <!-- Right Scroll Button -->
+        <button class="carousel-button" onclick="moveSlide(1)" style="right: 10px;">
+            &#10095;
+        </button>
+
+
+            <!-- Circular Toggle Indicators -->
+        <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px;">
+            <span class="indicator" onclick="goToSlide(0)" style="width: 15px; height: 15px; background-color: #fff; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
+            <span class="indicator" onclick="goToSlide(1)" style="width: 15px; height: 15px; background-color: #fff; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
+            <span class="indicator" onclick="goToSlide(2)" style="width: 15px; height: 15px; background-color: #fff; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
+            <span class="indicator" onclick="goToSlide(3)" style="width: 15px; height: 15px; background-color: #fff; border-radius: 50%; display: inline-block; cursor: pointer;"></span>
+       </div>
+
+
+    </div>
+
+  <section class="announcements">
+  <h1>What's New in SVFC?</h1>
+
+  <div class="announcement-container">
+
+    <div class="announcement-box">
+      <img src="D:\svfc-assets/enrollment.png" alt="Enrollment Open" class="previewable">
+      <h3>Enrollment for SY 2024–2025 is Now Officially Open!</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis.</p>
+      <span class="date">October 20, 2025</span>
+    </div>
+
+    <div class="announcement-box">
+      <img src="D:\svfc-assets/intrams.jpg" alt="Intramurals" class="previewable">
+      <h3>Upcoming School Event: Intramurals Sports</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis.</p>
+      <span class="date">October 25, 2025</span>
+    </div>
+
+    <div class="announcement-box">
+      <img src="D:\svfc-assets/radio.png" alt="Radyo Vincentian" class="previewable">
+      <h3>Radyo Vincentian Season 9 Is Now Available</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam facilisis.</p>
+      <span class="date">November 1, 2025</span>
+    </div>
+
+  </div>
+  <br>
+  <hr>
+</section>
+
+<!-- 🔍 Image Preview Modal -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<!-- 💻 JavaScript for Image Preview -->
+<script>
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close");
+
+document.querySelectorAll(".previewable").forEach(img => {
+  img.addEventListener("click", () => {
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  });
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+</script>
+  
+<section class="student">
+  <h1>Check the Progress</h1>
+
+  <div class="jar">
+    <!-- 🎯 Row wrapper for counters -->
+    <div class="counter-row">
+      <div class="counter-container">
+        <div class="counter" id="counter1">0</div>
+        <div class="label">Visit</div>
+      </div>
+      <div class="counter-container">
+        <div class="counter" id="counter2">0</div>
+        <div class="label">Followers</div>
+      </div>
+      <div class="counter-container">
+        <div class="counter" id="counter3">0</div>
+        <div class="label">Students</div>
+      </div>
+    </div>
+
+    <!-- 💬 Paragraph stays under counters -->
+    <div class="P">
+      <p>
+            We are sincerely grateful for your visit and for choosing to engage with the Saint Vincent de Ferrer College community.  
+        <br><br>Your interest strengthens our mission, and we are excited to have you be part of our continuous growth.
+      </p>
+    </div>
+  </div>
+  <br><hr><!--  -->
+</section>
+
+<section class="testimonials">
+  <h1>What Our Students Say</h1>
+
+  <div class="testimonial-container">
+    <div class="testimonial-box">
+      <p>"Studying at SVFC helped me grow not just academically, but also spiritually and morally."</p>
+      <h4>- Angela Dimaguina.</h4>
+    </div>
+
+    <div class="testimonial-box">
+      <p>"Online Learning is the Best! We get to control our time and still have quality education anytime, anywhere"</p>
+      <h4>- William Kisser Endonela.</h4>
+    </div>
+
+    <div class="testimonial-box">
+      <p>"SVFC gave me confidence and skills that I know will help me in my future career."</p>
+      <h4>- Kyle Christopher.</h4>
+    </div>
+  </div>
+</section>
+
+    
+    <script>
+        function animateCount(elementId, start, end, duration) {
+            let startTime = null;
+            const element = document.getElementById(elementId);
+            
+            function updateNumber(timestamp) {
+                if (!startTime) startTime = timestamp;
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                const value = Math.floor(progress * (end - start) + start);
+                element.textContent = value;
+                
+                if (progress < 1) {
+                    requestAnimationFrame(updateNumber);
+                }
+            }
+            
+            requestAnimationFrame(updateNumber);
+        }
+
+        // Animate counts for all counters
+        animateCount("counter1", 0, 560, 5000);
+        animateCount("counter2", 0, 780, 2000);
+        animateCount("counter3", 0, 1260, 2000);
+    </script>
+    
+  
+    <!-- Mssion and Vision -->
+    <section class="mission-vision-section">
+        <h1>In SVFC, we value achieving:</h1>
+  <div class="mv-container">
+    <!-- 🎯 Mission Card -->
+    <div class="mv-card">
+      <div class="mv-icon">
+        <i class="fas fa-bullseye"></i>
+      </div>
+      <h3>Our Mission</h3>
+      <p>
+        To provide quality education that nurtures students’ intellectual, moral, and spiritual growth,
+        empowering them to become responsible citizens guided by Vincentian values.
+      </p>
+    </div>
+
+    <!-- 👁️ Vision Card -->
+    <div class="mv-card">
+      <div class="mv-icon">
+        <i class="fas fa-eye"></i>
+      </div>
+      <h3>Our Vision</h3>
+      <p>
+        An institution committed to academic excellence and service to humanity,
+        inspired by the teachings of St. Vincent de Ferrer.
+      </p>
+    </div>
+
+    <!-- 📖 Motto Card -->
+    <div class="mv-card">
+      <div class="mv-icon">
+        <i class="fas fa-book-open"></i> <!-- 📘 New Motto Icon -->
+      </div>
+      <h3>Our Motto</h3>
+      <p>"Cultivating Knowledge, Inspiring Tomorrow."</p>
+    </div>
+  </div>
+     <br><br><hr>  
+</section>
+    
+        <!-- Videos -->
+<section class="video-section">
+  <h2 class="video-title">Videos</h2>
+
+  <div class="video-featured">
+    <!-- Featured Video Thumbnail -->
+    <div class="featured-thumbnail">
+      <a href="https://youtu.be/uePgSoIuL_o?si=08CoN6gZIslNNaWB" target="_blank">
+        <img src="D:\svfc-assets/featured.jpg" alt="Featured Video">
+        <div class="play-button">&#9658;</div>
+      </a>
+    </div>
+
+    <!-- Featured Text -->
+    <div class="featured-info">
+      <h3>Welcome to another year in SVFC! </h3>
+      <p>A message from the top! In this video, join us as the President of SVFC officially welcomes all students, faculty, and staff to the new academic year. <br><br>We look forward to a year of growth and innovation!</p>
+      <a href="https://youtu.be/uePgSoIuL_o?si=08CoN6gZIslNNaWB" class="watch-btn" target="_blank">▶ Play</a>
+    </div>
+  </div>
+
+  <!-- 🔹 Other Videos -->
+  <div class="video-grid">
+    <div class="video-card">
+      <a href="https://youtu.be/7ToPoNaUNHE?si=gRX9MxA-suWKrxnm" target="_blank">
+        <img src="D:\svfc-assets/video2.jpg" alt="">
+        <div class="play-overlay">&#9658;</div>
+      </a>
+      <p>A Chitchat with Sweet Ellen | Abigail Faye Del Rosario's Story</p>
+    </div>
+
+    <div class="video-card">
+      <a href="https://youtu.be/4lG8VfSTVy8?si=hUIxMHrDkTqIKMeS2" target="_blank">
+        <img src="D:\svfc-assets/video3.jpg" alt="">
+        <div class="play-overlay">&#9658;</div>
+      </a>
+      <p>SVFC COLLEGE 11TH COMMENCEMENT EXERCISES</p>
+    </div>
+
+    <div class="video-card">
+      <a href="https://youtu.be/UJlaUyDz11Y?si=eaGjcQd067WJQN_F" target="_blank">
+        <img src="D:\svfc-assets/video4.jpg" alt="">
+        <div class="play-overlay">&#9658;</div>
+      </a>
+      <p>Labor Education Seminar in SVFC</p>
+    </div>
+      
+  </div>
+
+</section>
+
+    <section class="about">
+  <div class="container">
+    <!-- 🌸 Main Content -->
+    <div class="main-content">
+      <h1>St. Vincent de Ferrer College <br>– Get to Know Us</h1>
+      <hr><br>
+      <p>
+        St. Vincent de Ferrer College of Camarin, Inc. is a private educational institution
+        managed by a dedicated family of educators.
+      </p>
+
+      <div class="objectives">
+        <h2>Objectives are as follows:</h2>
+        <ul>
+          <li>To provide quality yet affordable education to poor but academically equipped youth.</li>
+          <li>To support the government's goal of bringing all Filipinos to school.</li>
+          <li>To help alleviate the standard of living of the people of Camarin by providing
+            courses/programs responsive to the demands of the community.</li>
+          <li>To promote a continuing interest in education as we improve the standards of
+            living for the people of Camarin by providing the demands of an emerging
+            industrial society.</li>
+        </ul>
+      </div>
+
+      <button><a href="https://svfc-edu.com/about/philosophy_mission_and_vision">Read More</a></button>
+
+      <!-- 📸 Image Section -->
+      <div class="about-image">
+        <img src="D:\svfc-assets/aboutpic2.png" alt="St. Vincent de Ferrer College Students">
+      </div>
+    </div>
+
+    <!-- 🌸 Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#">◎ Caloocan City and Batang Kankaloo—What now?</a></li>
+        <li><a href="#">Our Strengths as a College is YOU</a></li>
+        <li><a href="#">What happens if we achieve our Vision?</a></li>
+        <li><a href="#">Multiple Performances in SVFC - Gateway to Success</a></li>
+        <li><a href="#">Where do funds come from to start this Institution?</a></li>
+      </ul>
+    </aside>
+    
+    
+  </div>
+</section>
+
+    
+    <footer>
+  <div class="footer-container">
+      
+       <div class="footer-box">
+      <h3>Website Developer</h3>
+      <hr>
+      <p>John Denson E. Inao</p>
+      <p>BSIT-3A</p>
+      <p>Human Computer Interaction 2</p>
+      <p>Mr. Jasper Murillo</p>
+    </div>
+    <!-- 🕿 Contact Information -->
+    <div class="footer-box">
+      <h3>Concierge Numbers</h3>
+      <hr>
+      <ul>
+        <li>SMART 0968-729-2593</li>
+        <li>SMART 0969-597-2577</li>
+        <li>SMART 0908-658-1680</li>
+        <li>SMART 0969-597-2586</li>
+      </ul>
+    </div>
+
+    <!-- 🕒 Office Hours -->
+    <div class="footer-box">
+      <h3>Office Hours</h3>
+      <hr>
+      <p><b>MONDAY to FRIDAY</b></p>
+      <p>8:00 A.M. – 5:00 P.M.</p>
+      <p><b>SATURDAY</b></p>
+      <p>8:00 A.M. – 12:00 P.M.</p>
+    </div>
+    
+    
+
+    <!-- 📍 Address + Socials -->
+    <div class="footer-box">
+      <h3>Address</h3>
+      <hr>
+      <p>SVFC Compound, San Vicente Ferrer Road,<br>
+      Area D, Brgy. 178, Camarin, Caloocan City</p>
+
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔗 Quick Links -->
+  <div class="footer-links">
+    <a href="#">Home</a>
+    <a href="#">Admissions</a>
+    <a href="#">Registrar</a>
+    <a href="#">Jobs</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+  <!-- ⚖️ Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 St. Vincent de Ferrer College of Camarin, Inc. | All Rights Reserved.</p>
+  </div>
+</footer>
+
+    <script>
+    let currentSlide = 0;
+
+    const carousel = document.getElementById("carousel");
+    const slides = carousel.children;
+    const totalSlides = slides.length;
+
+    function updateCarousel() {
+        const slideWidth = carousel.clientWidth;
+        carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+
+        // Optional: Update active indicator
+        const indicators = document.querySelectorAll(".indicator");
+        indicators.forEach((dot, index) => {
+            dot.style.backgroundColor = index === currentSlide ? "#d117ac" : "#fff";
+        });
+    }
+    
+    setInterval(() => {
+    moveSlide(1);
+    }, 4000); // change every 5 seconds
+
+    function moveSlide(direction) {
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        updateCarousel();
+    }
+
+    // Make sure it resizes correctly
+    window.addEventListener('resize', updateCarousel);
+
+    // Initial setup
+    window.addEventListener('load', updateCarousel);
+</script>
+
+</body>
+</html>

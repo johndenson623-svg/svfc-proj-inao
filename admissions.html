@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Vincent de Ferrer College of Camarin, Inc.</title>
+    <link rel="icon" type="image/x-icon" href="D:\svfc-assets/logo.png">
+    <link rel="stylesheet" href="RegAd.css">
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
+  <style>
+
+/* 🧭 ==== SECTION CONTAINER (affects the whole process block) ==== */
+.process-section {
+  padding: 40px 0px;
+  text-align: center;
+}
+
+/* 🏷️ ==== TITLE STYLING ==== */
+.process-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #cc00cc; /* deep red tone for school theme */
+  margin-bottom: 40px;
+}
+
+/* 📦 ==== GRID LAYOUT (arranges the 6 boxes evenly) ==== */
+.process-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* responsive layout */
+  gap: 20px;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* 📘 ==== EACH PROCESS CARD BOX ==== */
+.process-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: center;
+  width: 100%;
+  max-width: 330px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px #cc00cc;
+}
+
+/* 🪜 ==== STEP NUMBER ==== */
+.process-step {
+    color: #cc00cc;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* 🧾 ==== TITLE OF EACH BOX ==== */
+.process-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* 📝 ==== DESCRIPTION TEXT ==== */
+.process-description {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* ⚠️ ==== NOTES SECTION ==== */
+.process-note {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #b5121b;
+  margin-top: 10px;
+}
+  
+  /* === PUBMAT === */
+.announcements-registrar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.announcement-card-registrar {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 320px; /* Fixed card width */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: black;
+}
+
+.announcement-card-registrar:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1)
+}
+
+/* Uniform image sizing */
+.announcement-card-registrar img {
+  width: 100%;
+  height: 220px; /* Fixed height for uniform look */
+  object-fit: cover; /* Crop proportionally */
+  display: block;
+}
+
+.announcement-info-registrar {
+  padding: 10px 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.announcement-date-registrar {
+  color: gray;
+  font-size: 0.85rem;
+}
+
+.announcement-title-registrar {
+  font-weight: 600;
+  color: #000;
+}
+
+/* === MODAL POPUP (NO JS) === */
+.image-modal-registrar {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.image-modal-registrar img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* The close button */
+.image-modal-registrar a.close-modal-registrar {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+/* When target is active, show modal */
+.image-modal-registrar:target {
+  display: flex;
+}
+
+/* 📱 ==== RESPONSIVE FIX ==== */
+@media (max-width: 768px) {
+  .process-section h2 {
+    font-size: 1.6rem;
+  }
+  .process-card {
+    max-width: 100%;
+  }
+}
+</style>  
+</head>
+
+<body>
+  <div class="top-bar">
+    <!-- 🏫 SCHOOL NAME -->
+    <div class="school-name">
+        <a href="#">St. Vincent de Ferrer College of Camarin, Inc.</a>
+    </div>
+
+    <!-- 🏵️ CENTER LOGO -->
+    <div class="center-logo">
+        <img src="D:\svfc-assets/logo.png" alt="SVFC Logo" aria-label="St. Vincent de Ferrer College of Camarin, Inc. Logo">
+    </div>
+
+    <!-- 📋 NAVIGATION MENU -->
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="admissions.html">Admission</a></li>
+            <li><a href="registrar.html">Registrar</a></li>
+            <li><a href="svfcJobsChallenge.html">Jobs</a></li>
+        </ul>
+    </nav>
+</div>
+  
+
+    <section class="registrar">
+  <div class="admission-banner"
+        style="background-image: url('D:\svfc-assets/4.png');">   
+    <h1>ADMISSIONS</h1>
+  </div>
+
+  <p class="content">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum tortor massa, sit amet bibendum dui iaculis nec. 
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam in bibendum purus. 
+    Cras ultrices neque rutrum, rhoncus turpis quis, mollis lorem. Vestibulum ante ipsum primis in faucibus orci luctus et 
+    ultrices posuere cubilia curae; Integer nec hendrerit nisl. Nunc eleifend eleifend nisl placerat volutpat. Donec aliquam 
+    venenatis eleifend. Vivamus magna felis, vulputate vitae condimentum non, fringilla eget elit.
+  </p>
+</section>
+    
+    <!-- 🎓 AUTO-MOVING SLIDESHOW -->
+    
+    
+<section class="slideshow-container">
+  <div class="slideshow-track">
+    <a href="#img1"><img src="D:\svfc-assets/graduates.jpeg" alt="Campus Activity 1"></a>
+    <a href="#img2"><img src="D:\svfc-assets/images.jpeg" alt="Campus Activity 2"></a>
+    <a href="#img3"><img src="D:\svfc-assets/SVFC.JPG" alt="Campus Activity 3"></a>
+    <a href="#img4"><img src="D:\svfc-assets/lab.jpeg" alt="Campus Activity 4"></a>
+    <a href="#img5"><img src="D:\svfc-assets/class.jpeg" alt="Campus Activity 5"></a>
+    <!-- Optional duplicates to loop smoothly -->
+    <a href="#img1"><img src="D:\svfc-assets/graduates.jpeg" alt="Campus Activity 1"></a>
+    <a href="#img2"><img src="D:\svfc-assets/images.jpeg" alt="Campus Activity 2"></a>
+  </div>
+</section>
+
+<!-- 🖼️ FULL VIEW MODALS -->
+    <div id="img1" class="modal">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="D:\svfc-assets/graduates.jpeg" alt="">
+    </div>
+    <div id="img2" class="modal">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="D:\svfc-assets/images.jpeg" alt="">
+    </div>
+    <div id="img3" class="modal">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="D:\svfc-assets/SVFC.JPG" alt="">
+    </div>
+    <div id="img4" class="modal">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="D:\svfc-assets/lab.jpeg" alt="">
+    </div>
+    <div id="img5" class="modal">
+      <a href="#" class="close-modal">&times;</a>
+      <img src="D:\svfc-assets/class.jpeg" alt="">
+    </div>
+
+<!-- 🎓 ==== ADMISSION PROCESS SECTION ==== -->
+<section class="process-section">
+  <h2>Admission Process</h2>
+
+  <div class="process-container">
+    <!-- 🧩 Step 1 -->
+    <div class="process-card">
+      <div class="process-step">Step 1</div>
+      <div class="process-title">Application Form</div>
+      <p class="process-description">
+        Fill out the <b>Student Application Admission Form</b> 
+        (<i>can be found at the bottom of this page</i>).
+        Click submit once accomplished. A notification will be sent to your email.<br><br>
+        <span class="process-note">Note:</span> Telephone inquiries will not be entertained.
+      </p>
+    </div>
+
+    <!-- 🧩 Step 2 -->
+    <div class="process-card">
+      <div class="process-step">Step 2</div>
+      <div class="process-title">Upload Documents</div>
+      <p class="process-description">
+        Scan and upload your <b>documents</b> via the Google Form link sent to your email.
+        A confirmation will follow to proceed to Step 3.
+      </p>
+    </div>
+
+    <!-- 🧩 Step 3 -->
+    <div class="process-card">
+      <div class="process-step">Step 3</div>
+      <div class="process-title">Admission Fee</div>
+      <p class="process-description">
+        Pay <b>P800</b> via DragonPay (link sent in the confirmation email). 
+        Proof of payment will be emailed to you.
+      </p>
+    </div>
+
+    <!-- 🧩 Step 4 -->
+    <div class="process-card">
+      <div class="process-step">Step 4</div>
+      <div class="process-title">Schedule Test</div>
+      <p class="process-description">
+        Choose your test schedule via <b>Google Appointment Form</b>.
+        Bring your test permit for onsite or await the test link for online.<br><br>
+        <span class="process-note">Note:</span> Telephone inquiries will not be entertained.
+      </p>
+    </div>
+
+    <!-- 🧩 Step 5 -->
+    <div class="process-card">
+      <div class="process-step">Step 5</div>
+      <div class="process-title">Application Status</div>
+      <p class="process-description">
+        You will receive one of the following:
+        <br>✅ <b>Accepted:</b> Student Acceptance Contract (SAC)
+        <br>⚙️ <b>Conditional:</b> Interview + Conditional Acceptance Contract (CAC)
+        <br>❌ <b>Not Accepted:</b> End of admissions. Submit signed documents online.
+      </p>
+    </div>
+
+    <!-- 🧩 Step 6 -->
+    <div class="process-card">
+      <div class="process-step">Step 6</div>
+      <div class="process-title">Pre-Enrollment</div>
+      <p class="process-description">
+        Sign the <b>Pre-Enrollment Agreement Form (PEAF)</b>.
+        Pay the reservation fee (via DragonPay or onsite). 
+        Get your endorsement slip and prepare for final enrollment via the Registrar’s Portal.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Yung Pubmat -->
+
+<h2 style="color:#d117ac; text-align:center;">PUBMATS</h2>
+
+<div class="announcements-registrar">
+  <!-- Announcement 1 -->
+  <a href="#img1-modal" class="announcement-card-registrar">
+    <img src="D:\svfc-assets/skul.jpg" alt="New Students Enrollment">
+    <div class="announcement-info-registrar">
+      <p class="announcement-date-registrar">June 24, 2025</p>
+      <p class="announcement-title-registrar">New Students Enrollment Process 2025–2026</p>
+    </div>
+  </a>
+
+  <!-- Announcement 2 -->
+  <a href="#img2-modal" class="announcement-card-registrar">
+    <img src="D:\svfc-assets/lab2.jpg" alt="Old Students Enrollment">
+    <div class="announcement-info-registrar">
+      <p class="announcement-date-registrar">June 23, 2025</p>
+      <p class="announcement-title-registrar">Old Students Enrollment Process 2025–2026</p>
+    </div>
+  </a>
+
+  <!-- Announcement 3 -->
+  <a href="#img3-modal" class="announcement-card-registrar">
+    <img src="D:\svfc-assets/enrol.jpg" alt="CSA-ESC Application">
+    <div class="announcement-info-registrar">
+      <p class="announcement-date-registrar">March 5, 2025</p>
+      <p class="announcement-title-registrar">CSA-ESC Application</p>
+    </div>
+  </a>
+</div>
+
+<!-- Modals for each image -->
+<div id="img1-modal" class="image-modal-registrar">
+  <a href="#" class="close-modal-registrar">&times;</a>
+  <img src="D:\svfc-assets/skul.jpg" alt="">
+</div>
+
+<div id="img2-modal" class="image-modal-registrar">
+  <a href="#" class="close-modal-registrar">&times;</a>
+  <img src="D:\svfc-assets/lab2.jpg" alt="">
+</div>
+
+<div id="img3-modal" class="image-modal-registrar">
+  <a href="#" class="close-modal-registrar">&times;</a>
+  <img src="D:\svfc-assets/enrol.jpg" alt="">
+</div>
+
+<!-- end of Pubmat -->
+
+<div class="faq-container-registrar">
+    <h2>SVFC Policies</h2>
+
+    <!-- FAQ Item 1 -->
+    <span class="faq-item-admin">
+      <button class="faq-question-admin">What is the policy of SVFC?</button>
+      <br>
+      <span class="faq-answer-admin">
+         <br> 
+        The policy may be requested online or onsite. To request online, send an email to
+        <b>registrar@csa.edu.ph</b> containing the complete name of the student, the name and relationship of
+        the requesting party, and the purpose of the request. To request onsite (or in-person), the requesting
+        party will be asked to fill out a form. Turnaround time for an acknowledged request for a certificate is
+        3-5 working days.
+      </span>
+    </span>
+
+    <br>
+    <br>
+    
+    <!-- FAQ Item 2 -->
+    <div class="faq-item-registrar">
+      <button class="faq-question-registrar">How can I apply for ESC or SHS VP?</button>
+      <div class="faq-answer-registrar">
+        You may apply through the official ESC or SHS VP application portal as announced by the Registrar’s Office.
+        Please check the CSA announcements or contact the Registrar for assistance.
+      </div>
+    </div>
+    <!-- FAQ Item 3 -->
+    <div class="faq-item-registrar">
+      <button class="faq-question-registrar">I lost my diploma/report card. Can I request for a new copy?</button>
+      <div class="faq-answer-registrar">
+        Yes. You may request a reissuance by submitting a formal request letter and valid ID to the Registrar’s Office.
+        Processing fees and verification may apply.
+      </div>
+    </div>
+
+    <!-- FAQ Item 4 -->
+    <div class="faq-item-registrar">
+      <button class="faq-question-registrar">How do I report the correction of my name?</button>
+      <div class="faq-answer-registrar">
+        Submit a letter of request along with a copy of your PSA Birth Certificate and any supporting document showing
+        the correct information. The Registrar’s Office will verify and update your records accordingly.
+      </div>
+    </div>
+   </div>
+
+<script>
+    // ===== FAQ Functionality (registrar-FAQ) =====
+    const faqQuestions = document.querySelectorAll(".faq-question-registrar");
+
+    faqQuestions.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const answer = btn.nextElementSibling;
+        answer.classList.toggle("open");
+
+        // Close other open FAQs
+        document.querySelectorAll(".faq-answer-registrar").forEach((other) => {
+          if (other !== answer) other.classList.remove("open");
+        });
+      });
+    });
+  </script>
+ 
+<br><!--  -->
+
+   <footer>
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>Website Developer</h3>
+      <hr>
+      <p>John Denson E. Inao</p>
+      <p>BSIT-3A</p>
+      <p>Human Computer Interaction 2</p>
+      <p>Mr. Jasper Murillo</p>
+    </div>
+    <!-- 🕿 Contact Information -->
+    <div class="footer-box">
+      <h3>Concierge Numbers</h3>
+      <hr>
+      <ul>
+        <li>SMART 0968-729-2593</li>
+        <li>SMART 0969-597-2577</li>
+        <li>SMART 0908-658-1680</li>
+        <li>SMART 0969-597-2586</li>
+      </ul>
+    </div>
+
+    <!-- 🕒 Office Hours -->
+    <div class="footer-box">
+      <h3>Office Hours</h3>
+      <hr>
+      <p><b>MONDAY to FRIDAY</b></p>
+      <p>8:00 A.M. – 5:00 P.M.</p>
+      <p><b>SATURDAY</b></p>
+      <p>8:00 A.M. – 12:00 P.M.</p>
+    </div>
+
+    <!-- 📍 Address + Socials -->
+    <div class="footer-box">
+      <h3>Address</h3>
+      <hr>
+      <p>SVFC Compound, San Vicente Ferrer Road,<br>
+      Area D, Brgy. 178, Camarin, Caloocan City</p>
+
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔗 Quick Links -->
+  <div class="footer-links">
+    <a href="#">Home</a>
+    <a href="#">Admissions</a>
+    <a href="#">Registrar</a>
+    <a href="#">Jobs</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+  <!-- ⚖️ Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 St. Vincent de Ferrer College of Camarin, Inc. | All Rights Reserved.</p>
+  </div>
+</footer>    
+
+</body>
+</html>
